@@ -1,15 +1,22 @@
 # Sproochentest Trainer
 
-Interactive Luxembourgish study site for Sproochentest preparation.
+A static Luxembourgish study website with 20 progressive lessons, 400 flashcards, 20 listening passages, 80 comprehension questions, speaking timers, progress tracking and a teacher view.
 
-The repository is being initialized automatically. The full editable website source will be unpacked into this repository by GitHub Actions.
+## Run locally
 
-Features include:
-- 20 progressive lessons
-- 400 vocabulary flashcards
-- 20 Luxembourgish listening exercises
-- 80 comprehension questions
-- speaking practice timers
-- local progress tracking
-- teacher view
-- GitHub Pages deployment
+Open `index.html` in a modern browser, or serve the folder with any static web server.
+
+## GitHub Pages
+
+1. Create a new GitHub repository, for example `sproochentest-trainer`.
+2. Upload the contents of this folder to the repository root.
+3. In GitHub, open **Settings → Pages** and set the source to **GitHub Actions**.
+4. The included `.github/workflows/pages.yml` workflow deploys the site after each push to `main`.
+
+## Audio
+
+Audio uses the browser Web Speech API with `lb-LU` requested. Actual Luxembourgish voice availability depends on the device/browser.
+
+## Storage
+
+Progress stays only in the browser's `localStorage`; there is no account or external database.

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0d3157" />
+  <title>Sproochentest Trainer</title>
+  <meta name="description" content="20 progressive Luxembourgish speaking, vocabulary and listening lessons for Sproochentest preparation." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <button class="brand" data-action="home" aria-label="Go to dashboard"><span class="mark">ST</span><span><strong>Sproochentest Trainer</strong><small>Luxembourgish · 20 lessons</small></span></button>
+    <div class="header-actions">
+      <label class="toggle"><input id="teacherToggle" type="checkbox"><span>Teacher view</span></label>
+      <button class="btn ghost" id="searchBtn">Search</button>
+    </div>
+  </header>
+  <main id="app"></main>
+  <dialog id="searchDialog" class="search-dialog">
+    <form method="dialog" class="dialog-head"><strong>Search all 400 words</strong><button class="iconbtn" aria-label="Close">×</button></form>
+    <input id="searchInput" class="search-input" placeholder="Type Luxembourgish or English…" autocomplete="off">
+    <div id="searchResults" class="search-results"></div>
+  </dialog>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
